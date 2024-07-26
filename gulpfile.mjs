@@ -35,7 +35,7 @@ const paths = {
   },
   html: {
     src: 'src/index.html',
-    dest: './assets',
+    dest: '.',
     watch: `src/index.html`,
   }
 };
@@ -43,7 +43,7 @@ const paths = {
 function initBrowserSync() {
   // Initialize browserSync serve a local server
   browserSync.init({
-    server: "assets"
+    server: ""
   })
 }
 
